@@ -1,0 +1,8 @@
+mixin experience-item(title, company, startDate, endDate = "Atual")
+    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+        .flex-grow-1
+            h3.mb-0= title
+            .subheading.mb-3= company
+            block
+        .flex-shrink-0
+            span.text-primary #{startDate} - #{endDate}

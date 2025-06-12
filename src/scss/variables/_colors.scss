@@ -1,0 +1,28 @@
+//
+// Colors
+//
+
+// Pre-state grayscale colors used in other variables
+
+$gray-800: #343a40;
+
+// Override Bootstrap color system
+
+// $orange: #bd5d38;
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #bd5d38;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+// Override Bootstrap default state colors
+// $mygreen: #03ad69;
+// $primary: $mygreen;
+
+$primary: $indigo;
+$secondary: lighten($primary, 10%);
