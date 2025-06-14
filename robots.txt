@@ -1,0 +1,6 @@
+# Todos os robots permitidos
+User-agent: *
+Allow: /
+
+# Localização do sitemap
+Sitemap: https://cv.hellmrf.dev.br/sitemap.xml
