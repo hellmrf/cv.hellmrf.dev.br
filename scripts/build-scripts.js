@@ -2,4 +2,6 @@
 
 const renderScripts = require('./render-scripts');
 
-renderScripts();
+(async function() {
+    await renderScripts();
+})();
