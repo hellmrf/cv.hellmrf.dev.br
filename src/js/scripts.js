@@ -1,6 +1,13 @@
 //
 // Scripts
-// 
+//
+
+// Avoid FOUC (Flash Of Unstyled Content) for FontAwesome icons
+document.addEventListener('DOMContentLoaded', function() {
+    // Remove invisibility class from icons after load
+    const icons = document.querySelectorAll('.fa, .fab, .fas, .far');
+    icons.forEach(icon => icon.style.visibility = 'visible');
+});
 
 window.addEventListener('DOMContentLoaded', event => {
 

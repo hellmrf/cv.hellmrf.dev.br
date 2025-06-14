@@ -2,6 +2,17 @@
 // Global
 //
 
+// Prevent FOUC (Flash of Unstyled Content) in Font Awesome icons
+.fa, .fab, .fas, .far {
+    visibility: hidden;
+}
+.fontawesome-i2svg-active .fa,
+.fontawesome-i2svg-active .fab,
+.fontawesome-i2svg-active .fas,
+.fontawesome-i2svg-active .far {
+    visibility: visible;
+}
+
 body {
     padding-top: $navbar-base-height;
     color: $gray-800;
