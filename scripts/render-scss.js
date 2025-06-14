@@ -6,12 +6,13 @@ const upath = require('upath');
 const postcss = require('postcss')
 const sass = require('sass');
 const sh = require('shelljs');
+const cssnano = require('cssnano');
 
 const stylesPath = '../src/scss/styles.scss';
 const destPath = upath.resolve(upath.dirname(__filename), '../dist/css/styles.css');
 
 module.exports = function renderSCSS() {
-    
+
     const results = sass.renderSync({
         data: entryPoint,
         includePaths: [
@@ -24,12 +25,15 @@ module.exports = function renderSCSS() {
         sh.mkdir('-p', destPathDirname);
     }
 
-    postcss([ autoprefixer ]).process(results.css, {from: 'styles.css', to: 'styles.css'}).then(result => {
-        result.warnings().forEach(warn => {
-            console.warn(warn.toString())
+    // Adiciona cssnano ao pipeline de postcss para minificação
+    postcss([autoprefixer, cssnano({preset: 'default'})])
+        .process(results.css, {from: 'styles.css', to: 'styles.css'})
+        .then(result => {
+            result.warnings().forEach(warn => {
+                console.warn(warn.toString())
+            })
+            fs.writeFileSync(destPath, result.css.toString());
         })
-        fs.writeFileSync(destPath, result.css.toString());
-    })
 
 };
 
