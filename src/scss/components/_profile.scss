@@ -1,0 +1,16 @@
+//
+// Profile Image
+//
+
+.img-profile-mobile {
+    max-width: 160px;
+    max-height: 160px;
+    border: 0.5rem solid rgba($primary, 0.2);
+}
+
+// Ensure the mobile image is only shown on small screens
+@include media-breakpoint-up(lg) {
+    .img-profile-mobile {
+        display: none;
+    }
+}
