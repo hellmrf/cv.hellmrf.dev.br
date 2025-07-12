@@ -1,62 +1,62 @@
 doctype html
 html(lang='pt-BR')
-  head
-    //- Ordem importa: charset primeiro para parsing mais rápido
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width,initial-scale=1')
+    head
+        //- Ordem importa: charset primeiro para parsing mais rápido
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width,initial-scale=1')
 
-    //- SEO
-    meta(name='description', content='Currículo profissional de Heliton Martins – Engenheiro de Software e pesquisador com experiência em desenvolvimento web, ciência de dados e IA')
-    meta(name='keywords', content='Heliton Martins,currículo,CV,desenvolvedor,engenheiro de software,pesquisador,Belo Horizonte,Brasil')
-    meta(name='author', content='Heliton Martins')
-    meta(name='robots', content='index,follow')
-    meta(name='googlebot', content='index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1')
-    meta(name='theme-color', content='#bd5d38')
+        //- SEO
+        meta(name='description', content='Currículo profissional de Heliton Martins – Engenheiro de Software e pesquisador com experiência em desenvolvimento web, ciência de dados e IA')
+        meta(name='keywords', content='Heliton Martins,currículo,CV,desenvolvedor,engenheiro de software,pesquisador,Belo Horizonte,Brasil')
+        meta(name='author', content='Heliton Martins')
+        meta(name='robots', content='index,follow')
+        meta(name='googlebot', content='index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1')
+        meta(name='theme-color', content='#bd5d38')
 
-    //- Canonical & localização
-    link(rel='canonical', href='https://cv.hellmrf.dev.br/')
-    meta(property='og:locale', content='pt_BR')
+        //- Canonical & localização
+        link(rel='canonical', href='https://cv.hellmrf.dev.br/')
+        meta(property='og:locale', content='pt_BR')
 
-    //- Open Graph
-    meta(property='og:type', content='website')
-    meta(property='og:url', content='https://cv.hellmrf.dev.br/')
-    meta(property='og:title', content='Heliton Martins – Currículo Profissional')
-    meta(property='og:description', content='Currículo profissional de Heliton Martins – Engenheiro de Software e pesquisador em IA')
-    meta(property='og:image', content='https://cv.hellmrf.dev.br/assets/img/profile.jpg')
+        //- Open Graph
+        meta(property='og:type', content='website')
+        meta(property='og:url', content='https://cv.hellmrf.dev.br/')
+        meta(property='og:title', content='Heliton Martins – Currículo Profissional')
+        meta(property='og:description', content='Currículo profissional de Heliton Martins – Engenheiro de Software e pesquisador em IA')
+        meta(property='og:image', content='https://cv.hellmrf.dev.br/assets/img/profile.jpg')
 
-    //- Twitter Cards
-    meta(property='twitter:card', content='summary_large_image')
-    meta(property='twitter:title', content='Heliton Martins – Currículo Profissional')
-    meta(property='twitter:description', content='Currículo profissional de Heliton Martins – Engenheiro de Software e pesquisador em IA')
-    meta(property='twitter:image', content='https://cv.hellmrf.dev.br/assets/img/profile.jpg')
-    meta(property='twitter:url', content='https://cv.hellmrf.dev.br/')
+        //- Twitter Cards
+        meta(property='twitter:card', content='summary_large_image')
+        meta(property='twitter:title', content='Heliton Martins – Currículo Profissional')
+        meta(property='twitter:description', content='Currículo profissional de Heliton Martins – Engenheiro de Software e pesquisador em IA')
+        meta(property='twitter:image', content='https://cv.hellmrf.dev.br/assets/img/profile.jpg')
+        meta(property='twitter:url', content='https://cv.hellmrf.dev.br/')
 
-    title Heliton Martins – Currículo Profissional | CV
+        title Heliton Martins – Currículo Profissional | CV
 
-    //- Conexão antecipada para domínios de fontes
-    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
+        //- Conexão antecipada para domínios de fontes
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
 
-    //- CSS crítico
-    link(rel='preload', href='css/styles.css', as='style', fetchpriority='high', onload='this.onload=null;this.rel="stylesheet"')
-    noscript
-        link(rel='stylesheet', href='css/styles.css')
+        //- CSS crítico
+        link(rel='preload', href='css/styles.css', as='style', fetchpriority='high', onload='this.onload=null;this.rel="stylesheet"')
+        noscript
+            link(rel='stylesheet', href='css/styles.css')
 
-    //- Google Fonts
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap', media='print', onload='this.media="all"')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap', media='print', onload='this.media="all"')
-    noscript
-        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap')
-        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap')
+        //- Google Fonts
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap', media='print', onload='this.media="all"')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap', media='print', onload='this.media="all"')
+        noscript
+            link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap')
+            link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap')
 
-    //- Academicons
-    link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css', media='print', onload='this.media="all"')
-    noscript
-        link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css')
+        //- Academicons
+        link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css', media='print', onload='this.media="all"')
+        noscript
+            link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css')
 
-    //- Favicons
-    link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
-    link(rel='apple-touch-icon', sizes='180x180', href='assets/img/favicon.ico')
+        //- Favicons
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        link(rel='apple-touch-icon', sizes='180x180', href='assets/img/favicon.ico')
 
     body#page-top
 
@@ -88,66 +88,66 @@ html(lang='pt-BR')
             include pages/interests
             hr.m-0
 
+    include includes/gtag.html
 
+    // Font Awesome icons (free version) - deferred
+    script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', defer, crossorigin='anonymous')
 
-        // Font Awesome icons (free version) - deferred
-        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', defer, crossorigin='anonymous')
+    // Bootstrap core JS - deferred for non-critical functionality
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', defer)
 
-        // Bootstrap core JS - deferred for non-critical functionality
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', defer)
+    // Core theme JS - deferred for better performance
+    script(src='js/scripts.js', defer)
 
-        // Core theme JS - deferred for better performance
-        script(src='js/scripts.js', defer)
-
-        // Structured data for SEO (Schema.org)
-        script(type='application/ld+json').
-            {
-              "@context": "https://schema.org/",
-              "@type": "Person",
-              "name": "Heliton Martins",
-              "url": "https://cv.hellmrf.dev.br/",
-              "image": "https://cv.hellmrf.dev.br/assets/img/profile.jpg",
-              "jobTitle": "Engenheiro de Software e Pesquisador",
-              "worksFor": {
+    // Structured data for SEO (Schema.org)
+    script(type='application/ld+json').
+        {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Heliton Martins",
+            "url": "https://cv.hellmrf.dev.br/",
+            "image": "https://cv.hellmrf.dev.br/assets/img/profile.jpg",
+            "jobTitle": "Engenheiro de Software e Pesquisador",
+            "worksFor": {
                 "@type": "Organization",
                 "name": "Programação Popular"
-              },
-              "email": "helitonmrf@gmail.com",
-              "address": {
+            },
+            "email": "helitonmrf@gmail.com",
+            "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Belo Horizonte",
                 "addressRegion": "MG",
                 "addressCountry": "Brasil"
-              },
-              "sameAs": [
+            },
+            "sameAs": [
                 "https://github.com/hellmrf",
                 "https://www.youtube.com/@programacaopopular"
-              ],
-              "knowsAbout": ["Python", "JavaScript", "React", "Node.js", "HTML", "CSS", "SASS", "Química Computacional", "Desenvolvimento Web"],
-              "knowsLanguage": [
-                {
-                  "@type": "Language",
-                  "name": "Português",
-                  "alternateName": "pt-BR"
-                },
-                {
-                  "@type": "Language",
-                  "name": "Inglês",
-                  "alternateName": "en"
-                }
-              ],
-              "alumniOf": [
-                {
-                  "@type": "CollegeOrUniversity",
-                  "name": "Universidade Federal de Minas Gerais",
-                  "alternateName": "UFMG",
-                  "sameAs": "https://ufmg.br/"
-                },
-                {
-                  "@type": "EducationalOrganization",
-                  "name": "Centro Federal de Educação Tecnológica de Minas Gerais",
-                  "alternateName": "CEFET-MG",
-                  "sameAs": "https://www.cefetmg.br/"
-                }
-              ]
+            ],
+            "knowsAbout": ["Python", "JavaScript", "React", "Node.js", "HTML", "CSS", "SASS", "Química Computacional", "Desenvolvimento Web"],
+            "knowsLanguage": [
+            {
+                "@type": "Language",
+                "name": "Português",
+                "alternateName": "pt-BR"
+            },
+            {
+                "@type": "Language",
+                "name": "Inglês",
+                "alternateName": "en"
             }
+            ],
+            "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Universidade Federal de Minas Gerais",
+                "alternateName": "UFMG",
+                "sameAs": "https://ufmg.br/"
+            },
+            {
+                "@type": "EducationalOrganization",
+                "name": "Centro Federal de Educação Tecnológica de Minas Gerais",
+                "alternateName": "CEFET-MG",
+                "sameAs": "https://www.cefetmg.br/"
+            }
+            ]
+        }
